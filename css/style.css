@@ -5,7 +5,7 @@
     --bg-black-100:#fdf9ff;
     --bg-black-50:#e8dfec;
     --text-black-900:#302e4d;
-    --text-black-700:#504e70
+    --text-black-700:#504e70;
 }
 body
 {
@@ -66,11 +66,12 @@ ul
 {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 60px;
 }
 .section-title h2
 {
     font-size: 40px;
-    color: var(--bg-black-900);
+    color: var(--text-black-900);
     font-weight: 700;
     position: relative;
 }
@@ -128,8 +129,8 @@ ul
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
     padding: 30px;
+    height: 100%;
     border-right: 1px solid var(--bg-black-50);
     display: flex;
     justify-content: center;
@@ -301,7 +302,7 @@ h3.my-profession
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: -30px;
+    right: 20px;
     bottom: -40px;
 }
 .home .home-img::before
@@ -312,7 +313,7 @@ h3.my-profession
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: -30px;
+    left: -20px;
     top: -40px;
 }
 .home .home-img img
@@ -352,11 +353,108 @@ h3.my-profession
 .about .about-content .personal-info
 {
     flex: 0 0 60%;
-    max-width: 40%;
+    max-width: 60%;
     margin-top: 40px;
+}
+.about .about-content .personal-info .info-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.about .about-content .personal-info .info-item p
+{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .personal-info .info-item p span
+{
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .buttons
+{
+    margin-top: 30px;
+}
+.about .about-content .personal-info .buttons .btn
+{
+    margin-right: 15px;
+    margin-top: 10px;
 }
 .about .about-content .skills
 {
     flex: 0 0 40%;
     max-width: 40%;
+    margin-top: 40px;
+}
+.about .about-content .skills .skill-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .skills .skill-item h5
+{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+.about .about-content .skills .skill-item .progress
+{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item
+{
+    margin-bottom: 25px;
+}
+.about .about-content .skills .skill-item .progress .progress-in
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+.about .about-content .skills .skill-item .skill-percent
+{
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.about .about-content .education,
+.about .about-content .experience
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}   
+.about .about-content h3.title
+{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline-box
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .timeline
+{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
 }
